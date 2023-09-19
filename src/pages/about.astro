@@ -13,7 +13,7 @@ const identity = {
 const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'ドキュメントの執筆'];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = 'navy';
@@ -42,4 +42,17 @@ const textCase = 'uppercase';
   {finished && <p>I finished this tutorial!</p>}
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 
-  </BaseLayout>
+</BaseLayout>
+
+<style define:vars={{ skillColor, fontWeight, textCase }}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>

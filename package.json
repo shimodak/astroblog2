@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "astro": "^3.0.12"
+    "astro": "^3.1.0"
   },
   "dependencies": {
-    "@astrojs/rss": "^3.0.0"
+    "@astrojs/preact": "^3.0.0",
+    "@astrojs/rss": "^3.0.0",
+    "preact": "^10.17.1"
   }
 }

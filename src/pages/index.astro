@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pageTitle = 'Astro landing';
+import Greeting from '../components/Greeting.jsx';
+const pageTitle = 'Astro takeoff';
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>sub title</h2>
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
